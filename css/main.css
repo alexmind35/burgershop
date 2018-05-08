@@ -496,7 +496,7 @@ footer {
   box-sizing: border-box; }
 
 .best {
-  background: url("../../img/bg/best-bg.jpg") no-repeat;
+  background: url("../img/bg/best-bg.jpg") no-repeat;
   background-size: cover;
   text-align: center;
   display: -webkit-box;
