@@ -1,0 +1,48 @@
+
+/************************/
+// антипаттерн
+.nav {
+    margin-right: rem(15px);
+    &__list {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+
+.nav__list{
+    display: flex;
+    list-style:none;
+}
+
+.nav__link{
+    font-size: rem(13px);
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	@include ubuntu(medium);
+	padding: 15px 15px 15px 20px;
+    transition: all .2s;
+    position: relative;
+    &:hover{
+        color:darken(white, 50%);
+    }
+    &:before{
+        content: '•';
+        position: absolute;
+        color: white;
+        left: 0;
+        top:50%;
+        transform: translateY(-50%);
+    }
+    
+}
+.nav__item{
+    &:first-child{
+        .nav__link{
+            &:before{
+                display: none;
+            }
+        }
+    }
+}
