@@ -649,7 +649,7 @@ footer {
   margin-bottom: 0.3125rem; }
 
 .footer {
-  background: url("../../img/bg/footer-bg.jpg") center bottom no-repeat;
+  background: url("./img/bg/footer-bg.jpg") center bottom no-repeat;
   background-size: cover;
   position: absolute;
   bottom: 0;
@@ -831,7 +831,7 @@ footer {
       display: none; } }
 
 .hero {
-  background: url("../../img/bg/hero-bg.jpg") center center no-repeat;
+  background: url("./img/bg/hero-bg.jpg") center center no-repeat;
   background-size: cover;
   position: relative; }
 
@@ -948,7 +948,7 @@ footer {
   fill: #e45028; }
 
 .yandex-map {
-  background: url("../../img/bg/map-bg.jpg") 50% no-repeat;
+  background: url("./img/bg/map-bg.jpg") 50% no-repeat;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -1042,7 +1042,7 @@ footer {
     width: 20rem; } }
 
 .menu {
-  background: url("../../img/bg/menu-bg.jpg") 50% no-repeat;
+  background: url("./img/bg/menu-bg.jpg") 50% no-repeat;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -1102,7 +1102,7 @@ footer {
   min-width: 5.3125rem; }
 
 .order {
-  background: url("../../img/bg/order-bg.jpg") 50% no-repeat;
+  background: url("./img/bg/order-bg.jpg") 50% no-repeat;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1564,7 +1564,7 @@ footer {
   font-size: 0.875rem; }
 
 .team {
-  background: url("../../img/bg/team-bg.jpg") 50% no-repeat;
+  background: url("./img/bg/team-bg.jpg") 50% no-repeat;
   background-size: cover;
   position: relative; }
   .team .section__title {
