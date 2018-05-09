@@ -109,3 +109,25 @@
 	color: #fff;
 	font-size: rem(14px);
 }
+@include tablets {
+	.team-acco__content{
+		display: flex;
+		justify-content: center;
+		align-content: space-between;
+		align-items: center;
+		flex-direction: column;
+	}
+	.team-acco__text {
+		text-align: center;
+		margin-top:rem(25px);
+	}
+	.team-acco__title {
+		margin-left: rem(-20px);
+	}
+}
+@media (max-width: 768px) {
+	.team-acco__content {
+		
+	display: none;
+	}
+}

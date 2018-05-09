@@ -108,3 +108,24 @@
     background-color: rgb(31, 33, 34);
   }
 }
+.review__view_read{
+  display: none;
+}
+@media (max-width: 768px) and (min-width:481px){
+	.review__hover {
+    height: 50px;
+    top:30px;
+  }
+}
+@media (max-width: 480px){
+	.review__title {
+    margin-top:rem(46px);
+    font-size: rem(24px);
+  }
+  .review__view{
+    display: none;
+  }
+  .review__view_read{
+    display: block;
+  }
+}
