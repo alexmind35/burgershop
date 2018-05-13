@@ -9,6 +9,156 @@
 	justify-content: center;
 
 	.section__title {
-		margin-bottom: rem(15px);
+		line-height: 0.9;
+        color: #fff;
 	}
+}
+  
+.burgers__content {
+    display: flex;
+    
+    @include tablets {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 20%;
+    }
+}
+
+.burgers__container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 15%;
+}
+  
+.burgers__left,
+.burgers__right {
+    float: left;
+    width: 50%;
+    @include tablets() {
+      float: none;
+      width: auto;
+    }
+}
+
+.burgers__right {
+	margin-left: rem(30px);
+    
+    @include tablets() {
+      padding-top: 0;
+    }
+}
+  
+.burgers__img {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.burgers__text-content{
+    @include ubuntu(light);
+	color: #fff;
+	font-size: rem(14px);
+	padding-top: 40px;
+}
+
+.offer{
+display: flex;
+}
+
+.offer .price {
+	@include gagalin;
+    font-size: rem(30px);
+    font-weight: bold;
+    color: $orange;
+}
+  .offer .price span {
+  	font-size: rem(72px);
+}
+  .offer .header__links{
+	margin-left: rem(30px);
+	margin-top: rem(50px);
+}
+
+a.down-arrow.left{
+	bottom: inherit;
+	transform: rotate(90deg);
+	left: 20%;
+}
+
+a.down-arrow.right{
+	bottom: inherit;
+	transform:rotate(270deg);
+	right:20%;
+	left: inherit;
+}
+
+
+@include tablets {
+	.burgers__left{
+		display: flex;
+		justify-content: center;
+		align-content: space-between;
+		align-items: center;
+        flex-direction: row;
+        .menu__burgers {
+            position: absolute;
+            margin-top: rem(-180px);
+            left: 2%;
+        }
+        .kkal__burgers {
+            position: absolute;
+            margin-top: rem(-180px);
+            right: 2%;
+        }
+    }
+    a.down-arrow.left{
+        left: 5%;
+    }
+    
+    a.down-arrow.right{
+        right:5%;
+    }
+	
+}
+
+@include phones {
+    .burgers__content {
+        padding: 0 10%;
+    }
+    .burgers__right{
+        .section__title{
+            margin-top: rem(50px);
+            font-size: rem(55px);
+        }
+
+    }
+    .offer{
+        display: flex;
+        
+        .price{
+            
+            font-size: rem(25px);
+            span{
+                font-size: rem(60px);
+            }
+        }
+    }
+    .offer .header__links{
+        margin-top: rem(20px);
+    }
+    a.down-arrow.left{
+        left: 2%;
+    }
+    
+    a.down-arrow.right{
+        right:2%;
+    }
+	
+	
 }

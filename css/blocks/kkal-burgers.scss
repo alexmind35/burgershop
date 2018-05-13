@@ -1,0 +1,43 @@
+.kkal__burgers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+	width: rem(90px);
+	height: rem(90px);
+	border-radius: rem(5px);
+}
+
+.kkal__burgers-icon {
+    position: relative;
+    display: flex;
+    margin: auto ;
+    .kkal__burgers-pic {
+        width: 100%;
+        height: rem(60px);
+        
+    }
+    .kkal__burgers-count{
+        font-size: rem(18px);
+        color: white;
+        @include gagalin;
+        
+        position: absolute;
+        
+        height: rem(10px);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 35%;
+
+
+    }
+}
+
+.kkal__desc{
+font-size: rem(14px);
+  color: white;
+  @include gagalin;
+  
+}
