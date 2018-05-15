@@ -727,9 +727,17 @@ a.down-arrow.right {
 @media screen and (max-width: 480px) {
   .burgers__content {
     padding: 0 10%; }
-  .burgers__right .section__title {
-    margin-top: 3.125rem;
-    font-size: 3.4375rem; }
+  .burgers__left .menu__burgers {
+    position: absolute;
+    margin-top: -5.625rem;
+    left: -1%; }
+  .burgers__left .kkal__burgers {
+    position: absolute;
+    margin-top: -5.625rem;
+    right: 0; }
+  .burgers__img {
+    max-width: 90%;
+    max-height: 90%; }
   .offer {
     display: -webkit-box;
     display: -ms-flexbox;

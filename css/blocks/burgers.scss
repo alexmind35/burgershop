@@ -131,12 +131,23 @@ a.down-arrow.right{
     .burgers__content {
         padding: 0 10%;
     }
-    .burgers__right{
-        .section__title{
-            margin-top: rem(50px);
-            font-size: rem(55px);
+    .burgers__left{
+		
+        .menu__burgers {
+            position: absolute;
+            margin-top: rem(-90px);
+            left: -1%;
         }
-
+        .kkal__burgers {
+            position: absolute;
+            margin-top: rem(-90px);
+            right: 0;
+        }
+    }
+    .burgers__img{
+        
+        max-width: 90%;
+        max-height: 90%;
     }
     .offer{
         display: flex;
