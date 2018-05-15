@@ -3,13 +3,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-	background: #f08c33;
+	background: #e35028;
 	width: rem(90px);
 	height: rem(90px);
 	border-radius: rem(5px);
 }
 
-.menu__burgers-icon {
+.menu__burgers-icon a{
     display: flex;
    
     .menu__burgers-pic {

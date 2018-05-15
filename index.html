@@ -77,11 +77,76 @@
               <div class="burgers__left">
                 <div class="menu__burgers">
                     <div class="menu__burgers-icon">
+                        <a href="#openModal">
                         <svg class="menu__burgers-pic" style="fill: #fff">
                           <use xlink:href="./img/sprite/sprite.svg#burger"></use>
                         </svg>
+                      </a>
                     </div>
                     <div class="burgers__desc">состав</div>
+                    <div id="openModal" class="modalDialog">
+                        <div>
+                          <a href="#close" title="Закрыть" class="close">X</a>
+                          <ul class="modalburg__list">
+                              <li class="modalburg__item">
+                                  <div class="burgers__icon">
+                                    <svg class="modalburg__icon-pic" style="fill: #e25028">
+                                      <use xlink:href="./img/sprite/sprite.svg#beef"></use>
+                                    </svg>      
+                                    <div class="modalburg__title">Говядина</div>
+                                    <div class="modalburg__text">300 г</div>
+                                  </div>
+                              </li>
+                              <li class="modalburg__item">
+                                  <div class="burgers__icon">
+                                    <svg class="modalburg__icon-pic" style="fill: #f8b53b">
+                                      <use xlink:href="./img/sprite/sprite.svg#buns"></use>
+                                    </svg>      
+                                    <div class="modalburg__title">Булочки</div>
+                                    <div class="modalburg__text">100 г</div>
+                                  </div>
+                              </li>
+                              <li class="modalburg__item">
+                                  <div class="burgers__icon">
+                                    <svg class="modalburg__icon-pic" style="fill: #8ac03e">
+                                      <use xlink:href="./img/sprite/sprite.svg#salad"></use>
+                                    </svg>      
+                                    <div class="modalburg__title">Зелень</div>
+                                    <div class="modalburg__text">70 г</div>
+                                  </div>
+                              </li>
+                              <li class="modalburg__item">
+                                  <div class="burgers__icon">
+                                    <svg class="modalburg__icon-pic" style="fill: #e25028">
+                                      <use xlink:href="./img/sprite/sprite.svg#sauce"></use>
+                                    </svg>      
+                                    <div class="modalburg__title">Соус</div>
+                                    <div class="modalburg__text">150 г</div>
+                                  </div>
+                              </li>
+                              <li class="modalburg__item">
+                                  <div class="burgers__icon">
+                                    <svg class="modalburg__icon-pic" style="fill: #8ac03e">
+                                      <use xlink:href="./img/sprite/sprite.svg#cucumber"></use>
+                                    </svg>      
+                                    <div class="modalburg__title">Овощи</div>
+                                    <div class="modalburg__text">200 г</div>
+                                  </div>
+                              </li>
+                              <li class="modalburg__item">
+                                  <div class="burgers__icon">
+                                    <svg class="modalburg__icon-pic" style="fill: #f8b53b">
+                                      <use xlink:href="./img/sprite/sprite.svg#cheese"></use>
+                                    </svg>      
+                                    <div class="modalburg__title">Сыр</div>
+                                    <div class="modalburg__text">80 г</div>
+                                  </div>
+                              </li>
+                              
+                            </ul>
+                          
+                        </div>
+                      </div>
                 </div>
                 <img class="burgers__img" src="./img/content/burgers/burger_1.png" alt="">
                 <div class="kkal__burgers">
@@ -572,6 +637,7 @@
       <a class="status-popup__close btn" href="#">Закрыть</a>
     </div>
   </div>
+  
 <script src="./js/jquery-3.3.1.min.js"></script>
 <script src="./js/acco.js"></script>
 </body>
