@@ -694,7 +694,7 @@ a.down-arrow.right {
   right: 2%;
   left: inherit; }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 481px) {
   .burgers__left {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -719,6 +719,18 @@ a.down-arrow.right {
       position: absolute;
       margin-top: -11.25rem;
       right: 2%; }
+  .burgers__right .section__title {
+    font-size: 3.125rem; }
+  .offer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .offer .price {
+      font-size: 1rem; }
+      .offer .price span {
+        font-size: 3.125rem; }
+  .offer .header__links {
+    margin-top: 0.625rem; }
   a.down-arrow.left {
     left: 5%; }
   a.down-arrow.right {
@@ -1494,7 +1506,10 @@ a.down-arrow.right {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      margin-left: 0; } }
+      margin-left: 0; }
+      .order__form .order__form-col {
+        width: 100%;
+        margin-left: 0; } }
 
 .order__form-col {
   width: 45%;

@@ -99,7 +99,7 @@ a.down-arrow.right{
 }
 
 
-@include tablets {
+@media (max-width: 768px) and (min-width: 481px)  {
 	.burgers__left{
 		display: flex;
 		justify-content: center;
@@ -117,6 +117,26 @@ a.down-arrow.right{
             right: 2%;
         }
     }
+    .burgers__right{
+        .section__title{
+            font-size: rem(50px);
+        }
+    }
+    .offer{
+        display: flex;
+        
+        .price{
+            
+            font-size: rem(16px);
+            span{
+                font-size: rem(50px);
+            }
+        }
+    }
+    .offer .header__links{
+        margin-top: rem(10px);
+    }
+   
     a.down-arrow.left{
         left: 5%;
     }

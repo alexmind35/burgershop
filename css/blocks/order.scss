@@ -16,6 +16,10 @@
     flex-direction: column;
     align-items: center;
     margin-left: 0;
+    .order__form-col {
+      width: 100%;
+      margin-left: 0;
+    }
   }
 }
 
@@ -68,7 +72,6 @@
   resize: none;
 }
 
-.order__form-buttons {}
 
 .order__radio {
   position: relative;
