@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Главная страница
-  </title>
+  <title>Главная страница</title>
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -44,6 +43,11 @@
                     </li>
                   </ul>
                 </nav>
+                <a class="hamburger-menu__close" href="#">
+                    <svg class="modalburg__icon-pic" style="fill: #c1c2c2">
+                        <use xlink:href="./img/sprite/sprite.svg#close"></use>
+                    </svg>
+                </a>
               </div>
               <div class="header__links">
                 <a class="order-link btn" href="" data-scroll-to="6">Заказать</a>
@@ -582,6 +586,7 @@
       </section>
     </div>
   </div>
+  
   <ul class="fixed-menu">
     <li class="fixed-menu__item">
       <a class="fixed-menu__link fixed-menu__link--active" href="" data-scroll-to="0"></a>
@@ -638,7 +643,26 @@
     </div>
   </div>
   
-<script src="./js/jquery-3.3.1.min.js"></script>
-<script src="./js/acco.js"></script>
+
+<script type="text/javascript">
+  /**
+  * Функция Скрывает/Показывает блок 
+  * @author ox2.ru дизайн студия
+  **/
+  function showHide(element_id) {
+      //Если элемент с id-шником element_id существует
+      if (document.getElementById(element_id)) { 
+          //Записываем ссылку на элемент в переменную obj
+          var obj = document.getElementById(element_id); 
+          //Если css-свойство display не block, то: 
+          if (obj.style.display != "block") { 
+              obj.style.display = "block"; //Показываем элемент
+          }
+          else obj.style.display = "none"; //Скрываем элемент
+      }
+      //Если элемент с id-шником element_id не найден, то выводим сообщение
+      else alert("Элемент с id: " + element_id + " не найден!"); 
+  }   
+</script>
 </body>
 </html>

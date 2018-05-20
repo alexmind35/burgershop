@@ -19,9 +19,80 @@
 .header__menu {
 	flex: 1;
 	text-align: right;
-	margin-right: rem(20px);
-
-  @include tablets() {
-    display: none;
+  margin-right: rem(20px);
+  @media (min-width: 768px) {
+    .header__menu{
+      display: normal;
+    }
+  
   }
 }
+.hamburger-menu__close{
+	display: none;
+}
+@include tablets {
+ 
+	.header__btns{
+		
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(#2f3234, .99);
+		align-items: center;
+		justify-content: center;
+		z-index: 100;
+		transition: opacity .3s;
+		
+		&_visible {
+			display: flex;
+			flex-direction: column;
+			opacity: 0;
+		}
+	 .header__links{
+     display:none;
+   }
+		.nav__list{
+			flex-flow:column wrap;
+			justify-content: center;
+			align-items:center;
+		}
+		.nav__item a{
+			font-size: rem(24px);
+		}
+		.nav__link{
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-flow:column wrap;
+			margin: 10px;
+			&:before{
+				position: relative;
+				display: block;
+			}
+			
+		}
+		
+	}
+	.hamburger-menu__close {
+		position: absolute;
+		display: flex;
+		right: rem(15px);
+		top: rem(15px);
+		width: rem(18px);
+		height: rem(18px);
+		padding: rem(15px);
+		box-sizing: content-box;
+		svg{
+			width: rem(20px);
+		}
+		use {
+			transition: fill .3s;
+		}
+		
+	}
+	
+}
+
