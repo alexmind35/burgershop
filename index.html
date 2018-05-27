@@ -465,7 +465,7 @@
       <section class="section order">
         <div class="container">
           <div class="section__title">Закажите доставку</div>
-          <form class="order__form-tag" id="order-form">
+          <form action="server.php" method="post" class="order__form-tag" id="order-form">
             <div class="order__form">
               <div class="order__form-col">
                 <div class="order__form-row">
@@ -642,27 +642,11 @@
       <a class="status-popup__close btn" href="#">Закрыть</a>
     </div>
   </div>
-  
-
-<script type="text/javascript">
-  /**
-  * Функция Скрывает/Показывает блок 
-  * @author ox2.ru дизайн студия
-  **/
-  function showHide(element_id) {
-      //Если элемент с id-шником element_id существует
-      if (document.getElementById(element_id)) { 
-          //Записываем ссылку на элемент в переменную obj
-          var obj = document.getElementById(element_id); 
-          //Если css-свойство display не block, то: 
-          if (obj.style.display != "block") { 
-              obj.style.display = "block"; //Показываем элемент
-          }
-          else obj.style.display = "none"; //Скрываем элемент
-      }
-      //Если элемент с id-шником element_id не найден, то выводим сообщение
-      else alert("Элемент с id: " + element_id + " не найден!"); 
-  }   
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/acco.js"></script>
+  <script src="js/common.js"></script>
 </body>
 </html>
